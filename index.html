@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" style="scroll-behavior: smooth;" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,14 @@
     <link rel="icon" href="images/U.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-    <header class="bg-info">
+<body >
+    <header class="bg-info"  style="position: fixed; width: 100%; z-index: 1;">
        <div class="row text-white">
             <div class="col-md-6 col-9 p-3 pl-5">
-                <h2 >Subin Sabu</h2>
+                
+                <a href="#home-section" style="text-decoration: none; color: white;">
+                    <h2 >Subin Sabu</h2>
+                </a>
             </div>  
             <div class="col-md-6 col-3 my-auto ">
                 <nav class="navbar navbar-expand-lg navbar-light ">
@@ -23,16 +26,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">Services</a>
+                          <a class="nav-link text-white" href="#service-section">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Experience</a>
+                            <a class="nav-link text-white" href="#experience-section">Experience</a>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contact us</a>
+                            <a class="nav-link text-white" href="#contact-section">Contact me</a>
                         </li>
                       </ul>
                     </div>
@@ -41,7 +44,7 @@
         </div>    
     </header>
 
-    <section class="p-5">
+    <section id="home-section" style="padding-top: 7em;" >
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -58,7 +61,7 @@
         </div>
     </section>
 
-    <section class="bg-light p-5">
+    <section  id="service-section" class="bg-light" style="padding-top: 5em;">
         <div class="container">
             <h1 class="text-center">Services</h1>
             <div class="row mt-3 ">
@@ -131,7 +134,7 @@
         </div>
     </section>
 
-    <section class="bg-white p-5">
+    <section class="bg-white" id="experience-section" style="padding-top: 5em;">
         <div class="container">
             <h1 class="text-center">Experiences</h1>
             <div class="row pt-3">
@@ -219,9 +222,10 @@
         </div>
     </section>
 
-    <section class="p-5 bg-light">
+    <section class="bg-light" id="contact-section" style="padding-top: 5em;">
 
         <div class="container">
+            <h1 class="text-center m-3">Contact me</h1>
             <div class="row">
 
                 <div class="col-md-12">
@@ -257,8 +261,10 @@
                       <label for="inputAddress">Message</label>
                       <textarea class="form-control" cols="30" rows="10" placeholder="Type your message here.."></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
                   </form>
 
                 </div>
@@ -267,6 +273,34 @@
         </div>
 
     </section>
+
+    <footer class="bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+
+                    <a href="https://www.facebook.com/" style="text-decoration: none; color: white;">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" style="text-decoration: none; color: white;">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.whatsapp.com/" style="text-decoration: none; color: white;">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/" style="text-decoration: none; color: white;">
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </a>
+
+                    <p>&copy; 2023 Subin Sabu. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
